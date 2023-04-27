@@ -112,11 +112,6 @@ export const FormStepOOO = () => {
     setOwnershipOOO({ ...ownershipOOO, dateRegistration});
   };
 
-  console.log("ownershipOOO", ownershipOOO);
-  console.log("date", ownershipOOO.dateRegistration);
-  console.log(selectedCompany);
-  console.log("Поиск по значению", searchTerm);
-
   const validateFields = () => {
     const errors = {};
     validateStringField("reducedCompany", ownershipOOO.reducedCompany, errors);

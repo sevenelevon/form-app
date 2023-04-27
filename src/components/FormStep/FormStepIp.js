@@ -11,11 +11,11 @@ import {
 import { Checkbox } from "./FormComponent/Checkbox";
 
 export const FormStepIp = () => {
-  const [contract, setContract] = useState(false)
+  const [contract, setContract] = useState(false);
   const [ownership, setOwnership] = useState({
     INN: "",
     scanINN: "",
-    dateRegistration: "2023-04-17",
+    dateRegistration: "2023-04-19",
     OGRNIP: "",
     citizenship: "Russia",
     scanORNIP: "",
@@ -87,7 +87,7 @@ export const FormStepIp = () => {
   useEffect(() => {
     localStorage.setItem("ownership", JSON.stringify(ownership));
   }, [ownership]);
-  console.log("contract", contract);
+  
   return (
     <div>
       <div className="column__input">
